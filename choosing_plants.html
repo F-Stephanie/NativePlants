@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src=""></script>
+    </head>
+    <body>
+        <div id="nav_bar">
+            <a class="a" href="index.html">HOME</a>
+            <a class="a" href="learn_more.html">LEARN MORE</a>
+            <a class="a" href="gallery.html">GALLERY</a>
+            <a class="a" href="choosing_plants.html">SUGGESTIONS</a>
+        </div>
+        <div class="body">
+            <h1 id="gallery_header">
+                St. Louis Native Plants
+            </h1>
+
+            <hr>
+
+            <div id="quiz">
+                <h2 id="h2_title">Need some quick suggestions? Enter the parameters of you garden below to get some suggestions!</h2>
+                <div id="quiz_options">
+                    <br>
+                    <form>
+                        <h3 class="h3">What amount of sun does your garden get?</h3>
+                        <label class="block"><input type="radio" name="sunlight" value="full_sun" class="options" checked="checked"> Full sun</label>
+                        <label class="block"><input type="radio" name="sunlight" value="part_shade" class="options"> Part shade</label>
+                        <label class="block"><input type="radio" name="sunlight" value="full_shade" class="options"> Full shade</label>
+                     </form>
+                    <br>
+                    <form>
+                        <h3 class="h3">What is the soil type?</h3>
+                        <label class="block"><input type="radio" name="soilType" value="rich" class="options" checked="checked"> Rich, moist</label>
+                        <label class="block"><input type="radio" name="soilType" value="dry" class="options"> Dry</label>
+                        <label class="block"><input type="radio" name="soilType" value="not_sure" class="options"> Not sure or regular moisture</label>
+                     </form>
+                    <br>
+                    <form>
+                        <h3 class="h3">What kind of plants are you looking for?</h3>
+                        <label class="block"><input type="radio" name="plantType" value="flowers" class="options" checked="checked"> Flowers</label>
+                        <label class="block"><input type="radio" name="plantType" value="ferns" class="options"> Ferns and Grasses</label>
+                        <label class="block"><input type="radio" name="plantType" value="vegetables" class="options"> Edible</label>
+                     </form>
+                    <br>  
+                    <button id="submit_button">Get Suggestions</button>                
+                </div>
+            </div>
+            <span id="quiz_results">
+                <img id="plantImage1" src="" alt="Plant Image 1" hidden="true">
+                <img id="plantImage2" src="" alt="Plant Image 2" hidden="true">
+                <img id="plantImage3" src="" alt="Plant Image 3" hidden="true">
+                <img id="plantImage4" src="" alt="Plant Image 4" hidden="true">
+                <img id="plantImage5" src="" alt="Plant Image 5" hidden="true">
+                <img id="plantImage6" src="" alt="Plant Image 6" hidden="true">
+                <img id="plantImage7" src="" alt="Plant Image 7" hidden="true">
+                <img id="plantImage8" src="" alt="Plant Image 8" hidden="true">
+            </span>
+            
+        </div>
+
+        <script src="functions.js"></script>
+        
+        <script>
+
+            document.getElementById("submit_button").addEventListener("click", e => getQuizResults());
+            
+        </script>
+    </body>
+</html>

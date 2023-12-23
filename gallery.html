@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src=""></script>
+    </head>
+    <body>
+        <div id="nav_bar">
+            <a class="a" href="index.html">HOME</a>
+            <a class="a" href="learn_more.html">LEARN MORE</a>
+            <a class="a" href="gallery.html">GALLERY</a>
+            <a class="a" href="choosing_plants.html">SUGGESTIONS</a>
+        </div>
+        <div class="body">
+            <h1 id="gallery_header">
+               Gallery
+            </h1>
+            <hr>
+            <div id="introduction_gallery">
+                <h2>St. Louis Native Plants</h2>
+                <span id="intro_gallery_text">
+                    This is a non-exhaustive gallery of some popular St. Louis native plants with some information about them. Except for some of the edible plants, the plants in this gallery are top performing for landscaping according to the Missouri Botanical Garden. Their metrics include having at least three seasons of interest, a long life expectancy, and availability from nurseries.
+                </span>
+            </div>
+            <hr>
+
+            <div id="flowers_gallery">
+                <h3>Native Flowers</h3>
+                <div class="row">
+                    <img src="images/butterfly_milkweed.jpg" class="image" alt="Butterfly Milkweed"/>
+                    <p class="caption"><span class="gallery_plant_name">Butterfly Milkweed</span> <br> 
+                        <b>Amount of Sun</b>: Part Shade <br> 
+                        <b>Preferred Soil</b>: Dry <br> 
+                        <b>Pet Friendly</b>: Yes <br> 
+                        <b>Edible</b>: No <br> 
+                        <b>Environmental Benefits</b>: Loved by local pollinators, used by insects for shelter <br><br> 
+                        Learn more <a href="https://sugarcreekgardens.com/product/asclepias-tuberosa-butterfly-milkweed/">here</a></p>
+                    <img src="images/crested_iris.jpg" class="image" alt="Crested Iris"/>
+                    <p class="caption"><span class="gallery_plant_name">Butterfly Milkweed</span> <br> 
+                        <b>Amount of Sun</b>: Part Shade <br> 
+                        <b>Preferred Soil</b>: Dry <br> 
+                        <b>Pet Friendly</b>: Yes <br> 
+                        <b>Edible</b>: No <br> 
+                        <b>Environmental Benefits</b>: Loved by local pollinators, used by insects for shelter <br><br> 
+                        Learn more <a href="https://sugarcreekgardens.com/product/asclepias-tuberosa-butterfly-milkweed/">here</a></p>
+                    <img src="images/indian_pink.jpg" class="image" alt="Indian Pink"/>
+                    <p class="caption"><span class="gallery_plant_name">Butterfly Milkweed</span> <br> 
+                        <b>Amount of Sun</b>: Part Shade <br> 
+                        <b>Preferred Soil</b>: Dry <br> 
+                        <b>Pet Friendly</b>: Yes <br> 
+                        <b>Edible</b>: No <br> 
+                        <b>Environmental Benefits</b>: Loved by local pollinators, used by insects for shelter <br><br> 
+                        Learn more <a href="https://sugarcreekgardens.com/product/asclepias-tuberosa-butterfly-milkweed/">here</a></p>
+                </div>
+                <div class="col">
+                    <img src="images/jerusalem_artichoke.jpg" class="image" alt="Jerusalem Artichoke"/>
+                    <img src="images/purple_coneflower.jpg" class="image" alt="Purple Coneflower"/>
+                    <img src="images/purple_poppy_mallow.jpg" class="image" alt="Purple Poppy Mallow"/>
+                </div>
+                <div class="col">
+                    <img src="images/wild_bergamot.jpg" class="image" alt="Wild Bergamot"/>
+                    <img src="images/wild_geranium.jpg" class="image" alt="Wild Geranium"/>
+                    <img src="images/zigzag_goldenrod.jpg" class="image" alt="Zig-Zag Goldenrod"/>
+                </div>
+            </div>
+
+            <hr>
+
+            
+        </div>
+
+        <script src="functions.js"></script>
+        
+        <!-- <script>
+            const images = document.getElementsByClassName("image");
+
+            for(let i = 0; i < images.length; i++){
+                let id = images[i].id;
+                images[i].addEventListener("mouseover", e => highlight(id));
+                images[i].addEventListener("mouseout", e => nolight(id));
+                images[i].addEventListener("click", e => makeBigger(id));
+            }
+            document.getElementById("close").addEventListener("click", e => makeSmaller());
+            document.getElementById("left_arrow").addEventListener("click", e => goLeft());
+            document.getElementById("right_arrow").addEventListener("click", e => goRight());
+            
+        </script> -->
+    </body>
+</html>
