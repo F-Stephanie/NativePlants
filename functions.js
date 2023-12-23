@@ -196,6 +196,7 @@ function getQuizResults(){
                     imageElement.hidden = true;
                 }
             }
+            document.getElementById("no_results").hidden = false;
             break;
         case "full_sunveg":
             displayPlants(["jerusalem_artichoke", "american_hazelnut", "wild_bergamot", "persimmon", "wild_grapes"]);
@@ -214,6 +215,8 @@ function getQuizResults(){
 }
 
 function generateUniqueCode() {
+    document.getElementById("no_results").hidden = true;
+
     // Get the selected values for each group
     var sunlight = document.querySelector('input[name="sunlight"]:checked').value;
     var soilType = document.querySelector('input[name="soilType"]:checked').value;
