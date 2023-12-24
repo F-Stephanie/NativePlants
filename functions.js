@@ -124,10 +124,10 @@ function getQuizResults(){
             displayPlants(["shining_blue_star", "butterfly_milkweed", "purple_coneflower"]);
             break;
         case "part_shrflo":
-            displayPlants(["shining_blue_star", "crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "wild_geranium", "purple_coneflower"]);
+            displayPlants(["shining_blue_star", "crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "wild_geranium", "mayapple", "purple_coneflower"]);
             break;
         case "full_shrflo":
-            displayPlants(["crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "wild_geranium"]);
+            displayPlants(["crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "mayapple", "wild_geranium"]);
             break;
         case "full_sudflo":
             displayPlants(["wild_bergamot", "butterfly_milkweed", "aromatic_aster", "purple_poppy_mallow", "purple_coneflower"]);
@@ -142,10 +142,10 @@ function getQuizResults(){
             displayPlants(["wild_bergamot", "shining_blue_star", "butterfly_milkweed", "purple_poppy_mallow", "aromatic_aster", "purple_coneflower"]);
             break;
         case "part_shnflo":
-            displayPlants(["shining_blue_star", "aromatic_aster", "crested_iris", "zigzag_goldenrod", "indian_pink", "solomons_seal", "wild_geranium", "purple_coneflower"]);
+            displayPlants(["shining_blue_star", "aromatic_aster", "crested_iris", "zigzag_goldenrod", "mayapple", "indian_pink", "solomons_seal", "wild_geranium", "purple_coneflower"]);
             break;
         case "full_shnflo":
-            displayPlants(["crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "wild_geranium"]);
+            displayPlants(["crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "mayapple", "wild_geranium"]);
             break;
         case "full_surfer":
             displayPlants(["palm_sedge", "prarie_dropseed"]);
@@ -175,22 +175,22 @@ function getQuizResults(){
             displayPlants(["oak_sedge", "bristle_leaf_sedge", "maidenhair_fern", "sensitive_fern", "christmas_fern"]);
             break;
         case "full_surveg":
-            displayPlants(["jerusalem_artichoke", "american_hazelnut", "wild_bergamot", "wild_grapes"]);
+            displayPlants(["pawpaw", "jerusalem_artichoke", "american_hazelnut", "wild_bergamot"]);
             break;
         case "part_shrveg":
-            displayPlants(["jerusalem_artichoke", "solomons_seal", "american_hazelnut", "mayapple", "wild_grapes"]);
+            displayPlants(["pawpaw", "jerusalem_artichoke", "solomons_seal", "american_hazelnut", "mayapple"]);
             break;
         case "full_shrveg":
-            displayPlants(["mayapple", "solomons_seal"]);
+            displayPlants(["mayapple", "american_hazelnut", "solomons_seal"]);
             break;
         case "full_sudveg":
-            displayPlants(["jerusalem_artichoke", "wild_bergamot", "persimmon"]);
+            displayPlants(["jerusalem_artichoke", "wild_bergamot"]);
             break;
         case "part_shdveg":
             displayPlants(["jerusalem_artichoke", "persimmon"]);
             break;
         case "full_shdveg":
-            for(let j = 0; j < 8; j++){
+            for(let j = 0; j < 9; j++){
                 let imageElement = document.getElementById("plantImage" + (j + 1));
                 if (imageElement) {
                     imageElement.hidden = true;
@@ -199,13 +199,13 @@ function getQuizResults(){
             document.getElementById("no_results").hidden = false;
             break;
         case "full_sunveg":
-            displayPlants(["jerusalem_artichoke", "american_hazelnut", "wild_bergamot", "persimmon", "wild_grapes"]);
+            displayPlants(["pawpaw", "jerusalem_artichoke", "american_hazelnut", "wild_bergamot"]);
             break;
         case "part_shnveg":
-            displayPlants(["jerusalem_artichoke", "solomons_seal", "pawpaw", "american_hazelnut", "mayapple", "persimmon", "wild_grapes"]);
+            displayPlants(["jerusalem_artichoke", "solomons_seal", "pawpaw", "american_hazelnut", "mayapple", "persimmon"]);
             break;
         case "full_shnveg":
-            displayPlants(["pawpaw", "mayapple", "solomons_seal"]);
+            displayPlants(["american_hazelnut", "mayapple", "solomons_seal"]);
             break;
         default:
             console.log("error");
@@ -244,7 +244,7 @@ function displayPlants(plantNames) {
             imageElement.hidden = false;
         }
     }
-    for(let j = i; j < 8; j++){
+    for(let j = i; j < 9; j++){
         let imageElement = document.getElementById("plantImage" + (j + 1));
         if (imageElement) {
             imageElement.hidden = true;
