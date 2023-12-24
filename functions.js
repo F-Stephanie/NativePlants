@@ -121,7 +121,7 @@ function getQuizResults(){
     let uniqueCode = generateUniqueCode();
     switch (uniqueCode) {
         case "full_surflo":
-            displayPlants(["wild_bergamot", "shining_blue_star", "butterfly_milkweed", "purple_coneflower"]);
+            displayPlants(["shining_blue_star", "butterfly_milkweed", "purple_coneflower"]);
             break;
         case "part_shrflo":
             displayPlants(["shining_blue_star", "crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "wild_geranium", "purple_coneflower"]);
@@ -148,7 +148,7 @@ function getQuizResults(){
             displayPlants(["crested_iris", "zigzag_goldenrod", "solomons_seal", "indian_pink", "wild_geranium"]);
             break;
         case "full_surfer":
-            displayPlants(["bristle_leaf_sedge", "palm_sedge", "prarie_dropseed"]);
+            displayPlants(["palm_sedge", "prarie_dropseed"]);
             break;
         case "part_shrfer":
             displayPlants(["palm_sedge", "bristle_leaf_sedge", "maidenhair_fern", "sensitive_fern", "christmas_fern"]);
@@ -157,7 +157,7 @@ function getQuizResults(){
             displayPlants(["bristle_leaf_sedge", "maidenhair_fern", "sensitive_fern", "christmas_fern"]);
             break;
         case "full_sudfer":
-            displayPlants(["palm_sedge", "bristle_leaf_sedge"]);
+            displayPlants(["prarie_dropseed","palm_sedge"]);
             break;
         case "part_shdfer":
             displayPlants(["oak_sedge", "palm_sedge", "bristle_leaf_sedge"]);
@@ -166,10 +166,10 @@ function getQuizResults(){
             displayPlants(["oak_sedge", "bristle_leaf_sedge"]);
             break;
         case "full_sunfer":
-            displayPlants(["palm_sedge", "bristle_leaf_sedge", "prarie_dropseed", "wild_grapes"]);
+            displayPlants(["palm_sedge", "prarie_dropseed"]);
             break;
         case "part_shnfer":
-            displayPlants(["oak_sedge", "palm_sedge", "bristle_leaf_sedge", "maidenhair_fern", "sensitive_fern", "wild_grapes", "christmas_fern"]);
+            displayPlants(["oak_sedge", "palm_sedge", "bristle_leaf_sedge", "maidenhair_fern", "sensitive_fern", "christmas_fern"]);
             break;
         case "full_shnfer":
             displayPlants(["oak_sedge", "bristle_leaf_sedge", "maidenhair_fern", "sensitive_fern", "christmas_fern"]);
@@ -178,16 +178,16 @@ function getQuizResults(){
             displayPlants(["jerusalem_artichoke", "american_hazelnut", "wild_bergamot", "wild_grapes"]);
             break;
         case "part_shrveg":
-            displayPlants(["jerusalem_artichoke", "american_hazelnut", "mayapple", "wild_grapes"]);
+            displayPlants(["jerusalem_artichoke", "solomons_seal", "american_hazelnut", "mayapple", "wild_grapes"]);
             break;
         case "full_shrveg":
-            displayPlants(["mayapple"]);
+            displayPlants(["mayapple", "solomons_seal"]);
             break;
         case "full_sudveg":
-            displayPlants(["jerusalem_artichoke", "wild_bergamot", "persimmon", "wild_grapes"]);
+            displayPlants(["jerusalem_artichoke", "wild_bergamot", "persimmon"]);
             break;
         case "part_shdveg":
-            displayPlants(["jerusalem_artichoke", "persimmon", "wild_grapes"]);
+            displayPlants(["jerusalem_artichoke", "persimmon"]);
             break;
         case "full_shdveg":
             for(let j = 0; j < 8; j++){
@@ -202,10 +202,10 @@ function getQuizResults(){
             displayPlants(["jerusalem_artichoke", "american_hazelnut", "wild_bergamot", "persimmon", "wild_grapes"]);
             break;
         case "part_shnveg":
-            displayPlants(["jerusalem_artichoke", "pawpaw", "american_hazelnut", "mayapple", "persimmon", "wild_grapes"]);
+            displayPlants(["jerusalem_artichoke", "solomons_seal", "pawpaw", "american_hazelnut", "mayapple", "persimmon", "wild_grapes"]);
             break;
         case "full_shnveg":
-            displayPlants(["pawpaw", "mayapple", "wild_grapes"]);
+            displayPlants(["pawpaw", "mayapple", "solomons_seal"]);
             break;
         default:
             console.log("error");
