@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Image Gallery</title>
+        <title>St. Louis Native Plants</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src=""></script>
@@ -14,37 +14,35 @@
             <a class="a" href="gallery.html">GALLERY</a>
             <a class="a" href="choosing_plants.html">SUGGESTIONS</a>
         </div>
-         <h1 id="home_header">
-            Native Plants
-         </h1>
+        <div class="body">
+            <h1 id="home_header">
+                St. Louis Native Plants
+            </h1>
 
-         <hr>
+            <hr>
 
-         <div id="introduction">
-            <h2>Introduction</h2>
-            <span id="intro_text">
-                
-            </span>
-         </div>
-
+            <div id="introduction">
+                <h2>Introduction</h2>
+                <span id="intro_text">
+                    Welcome gardener! My name is Stephanie Fisher, and I want to help you incorporate native plants into your St. Louis garden. Whether you're an expert gardener or just getting started, there are many ways your garden can benefit from using native plants. Native plants are low maintenance and good for the environment, while offering much beauty and a sense of place. There are a wide variety of native plants, so they can find their home in any garden. Now’s as good a time as ever to save yourself time and money while helping the environment by including native plants in your garden. Learn more <a href="learn_more.html">here</a>.
+                </span>
+                <br>
+                <hr>
+                <span>
+                    Check out some popular native species in the <a href="gallery.html">gallery</a>.
+                </span>
+                <br>
+                <hr>
+                <span>
+                    Don't have a lot of time? Take <a href="choosing_plants.html">this short quiz</a> for some quick suggestions.
+                </span>
+                <img src="images/native_garden1.jpeg" class="big_img" alt="Native garden"/>
+            </div>
+        </div>
 
 
 
         <script src="functions.js"></script>
-        
-        <script>
-            const images = document.getElementsByClassName("image");
 
-            for(let i = 0; i < images.length; i++){
-                let id = images[i].id;
-                images[i].addEventListener("mouseover", e => highlight(id));
-                images[i].addEventListener("mouseout", e => nolight(id));
-                images[i].addEventListener("click", e => makeBigger(id));
-            }
-            document.getElementById("close").addEventListener("click", e => makeSmaller());
-            document.getElementById("left_arrow").addEventListener("click", e => goLeft());
-            document.getElementById("right_arrow").addEventListener("click", e => goRight());
-            
-        </script>
     </body>
 </html>
